@@ -1,0 +1,21 @@
+  
+/* S M Asifur Rahman  (12 batch)
+Khawaja yunus Ali University*/
+
+#include<stdio.h>
+int main()
+{
+
+   double celsius,farenheit;
+
+   printf("Enter the temperature is celsius : ");
+   scanf("%lf", &celsius);
+
+   farenheit = 1.8 * celsius + 32;
+
+   printf("Tenperature in farenheit is : %0.2lf", farenheit);
+
+
+
+    return 0;
+}
