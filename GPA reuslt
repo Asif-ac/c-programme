@@ -1,0 +1,25 @@
+/*S M Asifur Rahman
+
+Khwaja Yunus Ali University*/
+
+
+#include <stdio.h>
+int main()
+{
+    int ft_marks, st_marks, final_marks;
+    double total_marks;
+    printf("Enter first semester marks\t:\t");
+    scanf("%d", & ft_marks);
+
+    printf("Enter second semester marks\t:\t");
+    scanf("%d", & st_marks);
+
+    printf("Enter the final semester marks\t:\t");
+    scanf("%d", & final_marks);
+    total_marks = ft_marks / 4.0 + st_marks / 4.0 + final_marks / 2.0;
+    printf("GPA = %0.2lf", total_marks );
+
+
+
+    return 0;
+}
