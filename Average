@@ -1,0 +1,27 @@
+/* S M Asifur Rahman
+Khwaja Yunus Ali University*/
+
+#include<stdio.h>
+int main()
+{
+
+    int a,b,c,d,e,avg;
+    printf("Enter first Number  :");
+    scanf("%d", &a);
+    printf("Enter second Number :");
+    scanf("%d", &b);
+    printf("Enter first Number  :");
+    scanf("%d", &c);
+    printf("Enter third Number  :");
+    scanf("%d", &d);
+    printf("Enter fourth Number :");
+    scanf("%d", &e);
+
+    avg = (a + b + c + d + e)/5;
+
+    printf("Average is is :%d", avg);
+
+
+
+    return 0;
+}
