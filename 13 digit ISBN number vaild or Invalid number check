@@ -1,0 +1,37 @@
+//13 digit ISBN number valid or invalid check code
+//Question make dept head Gaji Golam faruk sir
+#include<stdio.h>
+int main()
+{
+    printf("Enter 13 digit ISBN number :\n");
+    int a,b,c,d,e,f,g,h,i,j,k,l,m;
+    scanf("%d %d %d %d %d %d %d %d %d %d %d %d %d,",&a,&b,&c,&d,&e,&f,&g,&h,&i,&j,&k,&l,&m);
+
+    int product1 = a * 1;
+    int product2 = b * 3;
+    int product3 = c * 1;
+    int product4 = d * 3;
+    int product5 = e * 1;
+    int product6 = f * 3;
+    int product7 = g * 1;
+    int product8 = h * 3;
+    int product9 = i * 1;
+    int product10 = j *3;
+    int product11 = k *1;
+    int product12 = l *3;
+    int product13 = m *1;
+
+    int sum = (product1 + product2 + product3 + product4 + product5 + product6 + product7 + product8 + product9 + product10 + product11 + product12+product13);
+
+
+  if (sum%10==0)
+    printf("Valid ISBN number");
+
+    else
+    printf("Invalid ISBN number");
+
+
+
+
+    return 0;
+}
