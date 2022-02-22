@@ -1,0 +1,33 @@
+//10 digit ISBN number valid or invalid check code
+//Question make dept head Gaji Golam faruk sir
+#include<stdio.h>
+int main()
+{
+    printf("Enter 10 digit ISBN number :\n");
+    int a,b,c,d,e,f,g,h,i,j;
+    scanf("%d %d %d %d %d %d %d %d %d %d,",&a,&b,&c,&d,&e,&f,&g,&h,&i,&j);
+
+    int product1 = a * 10;
+    int product2 = b * 9;
+    int product3 = c * 8;
+    int product4 = d * 7;
+    int product5 = e * 6;
+    int product6 = f * 5;
+    int product7 = g * 4;
+    int product8 = h * 3;
+    int product9 = i * 2;
+    int product10 = j *1;
+
+    int sum = (product1 + product2 + product3 + product4 + product5 + product6 + product7 + product8 + product9 + product10);
+
+  if (sum%11==0)
+    printf("Valid ISBN number");
+
+    else
+    printf("Invalid ISBN number");
+
+
+
+
+    return 0;
+}
