@@ -1,0 +1,45 @@
+//S M Asifur Rahman
+#include<stdio.h>
+int main()
+{
+    int row,col,n,sum=0;
+    int arr [3][3];
+    printf("Enter number : ");
+        scanf("%d", &n);
+    for(row=0;row<n;row++)
+    {
+        for(col=0;col<n;col++)
+        {
+            scanf("%d", & arr[row][col]);
+        }
+    }
+
+
+    for(row=0; row<n; row++)
+    {
+        for(col=0; col<n; col++)
+        {
+            printf(" %d ",arr[row][col]);
+
+        }
+        printf("\n");
+    }
+
+
+    for(row=0;row<n; row++)
+    {
+        for(col=0;col<n;col++)
+        {
+            if(row==col || row+col==n-1)
+                sum = sum + arr[row][col];
+        }
+
+    }
+    printf("sum= %d", sum);
+
+
+
+
+
+    return 0;
+}
