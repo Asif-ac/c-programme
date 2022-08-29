@@ -1,0 +1,62 @@
+//S M Asifur Rahman
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+
+    int d1,d2,m1,m2,y1,y2;
+
+
+
+
+            printf("\n\t Enter your date of birth :- \n");
+            printf("\t Day ");
+            scanf("%d",&d1);
+            printf("\t Month ");
+            scanf("%d",&m1);
+            printf("\t Year ");
+            scanf("%d",&y1);
+
+               printf("\n\t Enter Todays date  :- \n");
+            printf("\t Day ");
+            scanf("%d",&d2);
+            printf("\t Month ");
+            scanf("%d",&m2);
+            printf("\t Year ");
+            scanf("%d",&y2);
+
+            if(d2>=d1)
+            {
+                d2=d2-d1;
+            }
+            else{
+                m2--;
+                d2=d2+30;
+                d2 = d2-d1;
+            }
+
+            if(m2>=m1)
+            {
+                m2=m2-m1;
+            }
+            else{
+                y2--;
+                m2=m2+12;
+                m2 = m2-m1;
+            }
+
+            y2= y2-y1;
+
+             printf("\n\t Your present Age :-\n");
+            printf("\t%d year\t",y2);
+            printf("\t%d month\t",m2);
+            printf("\t%d day",d2);
+
+
+            return 0;
+
+
+
+}
